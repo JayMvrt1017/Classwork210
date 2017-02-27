@@ -4,40 +4,23 @@ function setup(){
     var pink = "#d0a1a8";
     var gray = "#a9a9a9";
     var nocolor = "white";
-    var a;
-    a = 175
-    var b;
-    b = 220
-    var c;
-    c = 350
-    var d;
-    d = 20
-    var e;
-    e = 200
-    var f;
-    f = 150
-    var g;
-    g = 150
-    var h;
-    h = 550
-    var i;
-    i = 30
-    var j;
-    j = 20
-    var k;
-    k = 5
-    var l;
-    l = 8
-    var m;
-    m = 243
-    var n; 
-    n = 260
-    var o;
-    o = 13
-    var p;
-    p = 630
-    var q;
-    q = 25
+    var a = 175;
+    var b = 220;
+    var c = 350;
+    var d = 20;
+    var e = 200;
+    var f = 150;
+    var g = 150;
+    var h = 550;
+    var i = 30;
+    var j = 20;
+    var k = 5;
+    var l = 8;
+    var m = 243;
+    var n = 260;
+    var o = 13;
+    var p = 630;
+    var q = 25;
     
     fill(pink)    
     rect(a, g, c, h, d);
