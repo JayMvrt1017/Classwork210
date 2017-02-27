@@ -3,37 +3,51 @@ function setup(){
     background("lightpink");
     
     //ts means textsize
-    var ts = 80;
+    var ts = 110;
     var lineNumber = 1;
     var textColor = ("Black");
+    var name = "JäY";
+    var a = 100;
+    var font = ("courier");
+    var str = 1000;
+    var tfz = 250;
+    var tsf = 375;
+    var tzz = 200;
+    var off = 155;
+    var osf = 175;
+    var fez = 480;
+    var sfz = 750;
+    var ffz = 450;
+    var doublefz = 440;
+    var ttf = 235;
+    var toz = 310;
+    var tof = 215;
+    var ffo = 550;
+    var onf = 195;
+    var fivefz = 550;
+    
     
     textSize(ts);
-    textFont("courier");
-    
-    //rect(320, 240, 70, 12);
+    textFont(font);
         
-    var y = 100;
-    var x = 100;
-    
     fill(textColor);
-    textSize(110);
+    textSize(ts);
     textAlign(CENTER);
-    text("JäY", 375, 200);
+    text(name, tsf, tzz);
     
     //First 2 lines
-    line(250, 155, 480, 155);
-    line(250, 175, 480, 175);
+    stroke(str);
+    line(tfz, off, fez, off);
+    line(tfz, osf, fez, osf);
     
-    translate(750, 450);
+    translate(sfz, ffz);
     rotate(PI);
     
-    textSize(110);
+    textSize(ts);
     textAlign(CENTER);
-    text("JäY", 440, 235);
+    text(name, doublefz, ttf);
     
     //Last 2 lines
-    line(310, 215, 550, 215);
-    line(310, 195, 550, 195);
-    
-
+    line(toz, tof, ffo, tof);
+    line(toz, onf, fivefz, onf);
 }
