@@ -22,22 +22,28 @@ function setup(){
     var p = 630;
     var q = 25;
     
-    fill(pink)    
+    fill(pink)
+    //Full Iphone Body
     rect(a, g, c, h, d);
-    
+    //Top Rect 
     rect(a, e, c, d);
-    
+    //Bottom Rect
     rect(a, p, c, q);
     
     fill(gray)
+    //Iphone Primary Outside Lens
     ellipse(b, a, i);
     
     fill(nocolor)
+    //Iphone Primary Middle Lens
     ellipse(b, a, j);
     
+    //Iphone Primary Small Lens
     ellipse(b, a, k);
-   
+    
+    //Secondary Small Lens
     ellipse(m, a, l);
     
+    //Last Camera
     ellipse(n, a, o);
 }
