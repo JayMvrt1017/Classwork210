@@ -1,25 +1,10 @@
 // system variable 
-var x = 10;
-var y = 50;
-function setup() {
-    createCanvas(640, 480);
-    background ('skyblue');
-}
-
 var position = 20;
 var speed = 15;
 
-
-function draw() {
-    background ('skyblue');
-    rect(x, y, 50, 50);
 draw = function() {
-    createCanvas(405, 405)}
+    createCanvas(405, 405)
     
-}
-    if (x < width-100){
-        x += 10;
-    } else { y += 10;
     rect(0, 0, 200, 400); // top left
     rect(200, 0, 200, 400); // top right
     rect(0, 200, 200, 200); // bottom left
@@ -32,7 +17,7 @@ draw = function() {
         fill("red");
         rect(0, 0, 200, 400);   
     }
-     
+    
     if (mouseX > 200) {
         fill("blue")
         rect(200, 0, 200, 400);
