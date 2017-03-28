@@ -1,7 +1,7 @@
 function setup(){
     createCanvas(1080, 2000);
     
-    var pink = "#d0a1a8";
+    var pink = "#e0babb";
     var gray = "#a9a9a9";
     var nocolor = "white";
     var a = 175;
