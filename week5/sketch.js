@@ -1,49 +1,48 @@
 // windows
 function setup() { 
-   createCanvas(640, 480);
+   createCanvas(640, 680);
+    
 }
 
 function draw() {
-    background(54, 72, 86);
-		
-		var grey = ("black");
-		var topColor = (16, 24, 34);
+    background("lightyellow");
+    
+    var windowWidth = width/4; // window width
+    var windowHeight = height/2; // window height
+    var top = color(76, 60, 112); //Top-Rect-Color
+    var topMid = color (39, 83, 93); //topMid-Rect-Color
+    var bottoMid = color(100, 55, 33); //bottoMid-Rect-color
+	var bottom = color(47, 76, 11); //bottom-Rect-Color
 	
+			for (var x = windowWidth/6; x < width; x+=windowWidth) {
+				for (var y = windowHeight/8; y < height; y+=windowHeight) {
+				
+				
+			fill("black");
+			rect (x, y, windowWidth/2, 210);
 	
-		fill(grey);
-		noStroke();
-		quad(260/2, 124/2, 360/2, 124/2, 420/2, 200/2, 420/2, 300/2);
-		quad(420/2, 300/2, 360/2, 374/2, 260/2, 374/2, 196/2, 296/2);
-		triangle(196/2, 296/2, 196/2, 200/2, 420/2, 300/2);
-		triangle(196/2, 200/2, 260/2, 124/2,420/2, 300/2);
+		fill(top);
+		rect (x, y, windowWidth/8, windowHeight/8);
+		rect (x*2, y, windowWidth/8, windowHeight/8);
+		rect (x*3, y, windowWidth/8, windowHeight/8);
 	
-		stroke(255);
-		//*Inner Octagon Line*//
-		line(277/2, 152/2, 351/2, 152/2);
-		line(399/2, 209/2, 399/2, 284/2);
-		line(352/2, 341/2, 276/2, 341/2);
-		line(228/2, 209/2, 228/2, 284/2);
+		fill(topMid);
+		rect(x, y+50, windowWidth/8, windowHeight/8);
+		rect(x*2, y+50, windowWidth/8, windowHeight/8);
+		rect(x*3, y+50, windowWidth/8, windowHeight/8);
 	
-		//Diagonal Lines Of Inner Octagon
-		line(351/2, 152/2, 399/2, 209/2);
-		line(399/2, 284/2, 352/2, 341/2);
-		line(276/2, 341/2, 228/2, 284/2);
-		line(228/2, 209/2, 277/2, 152/2);
+		fill(bottoMid);
+		rect(x, y+100, windowWidth/8, windowHeight/8);
+		rect(x*2, y+100, windowWidth/8, windowHeight/8);
+		rect(x*3, y+100, windowWidth/8, windowHeight/8);
 	
-		fill(topColor);
-		//Top Shapes
-		triangle(244/2, 209/2, 280/2, 209/2, 280/2, 167/2);
-		rect(288/2, 160/2, 45/2, 50/2);
-		triangle(345/2, 209/2, 380/2, 209/2, 345/2, 167/2);
+		fill(bottom);
+		rect(x, y+150, windowWidth/8, windowHeight/8);
+		rect(x*2, y+150, windowWidth/8, windowHeight/8);
+		rect(x*3, y+150, windowWidth/8, windowHeight/8);
+
+				}
 	
-		//Middle Shapes
-		rect(244/2, 215/2, 35/2, 65/2);
-		rect(288/2, 215/2, 45/2, 65/2);
-		rect(345/2, 215/2, 35/2, 65/2);
-	
-		//Lower Shapes
-		triangle(244/2, 288/2, 280/2, 329/2, 280/2, 288/2);
-		rect(288/2, 285/2, 45/2, 50/2);
-		triangle(344/2, 288/2, 344/2, 328/2, 380/2, 288/2);
-		
+	 	}
+
 }
